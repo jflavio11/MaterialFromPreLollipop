@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CardViewStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_margin">0dp</item>
+
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardCornerRadius">10dp</item>
+
+        <!--
+        Elevation in pre-lollipop creates an internal margin and that's the way it adds
+        shadow to the CardView.
+        If you want to have an elevation of 5dp but maintaining the same margin between views,
+        the margin must be 0dp then the visible margin for the user is going to be 5dp (the
+        elevation value).
+        -->
+        <item name="cardElevation">5dp</item>
+
+        <!-- Padding for the card view content. In pre-lollipop, a little padding is put as
+        default and added to the contentPadding value-->
+        <item name="contentPadding">7dp</item>
+
+        <!-- Is indifferent to set this value in pre-lollipop -->
+        <item name="cardUseCompatPadding">true</item>
+
+    </style>
+
+</resources>
